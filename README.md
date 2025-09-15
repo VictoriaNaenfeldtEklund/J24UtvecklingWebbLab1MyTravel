@@ -17,3 +17,6 @@ Collect all your travel memories and dreams in one place 🌍!
 
 ### Add trip
 ![add-trip page](images/readme-images/add-trip.jpg)
+
+### Mobile version with hamburger meny
+![index mobile page](images/readme-images/index_mobile.jpg)

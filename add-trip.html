@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTravel - Add Trip</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/article-grid.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/add-trip.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+
+            <a href="index.html" class="navbar__logo logo">My<span>Travel</span></a>
+
+            <div class="navbar__hamburger" id="navbar__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="navbar__right" id="navbar__right">
+
+                <ul class="navbar__links">
+                    <li><a href="dream.html" class="navbar__link">Dream</a></li>
+                    <li><a href="remember.html" class="navbar__link">Remember</a></li>
+                </ul>
+
+                <section class="navbar__buttons">
+                    <button class="btn" id="navbar__button--add">Add trip</button>
+                </section>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="add-trip">
+
+            <form class="form" id="form">
+
+                <section class="form__radio">
+
+                    <label class="form__section-label" for="form__radio-options">Store your trip in:</label>
+
+                    <section class="form__radio-options">
+
+                        <label class="form__radio-option" for="radio-dream">
+                            <input type="radio" id="radio-dream" name="radio-trip" value="dream" required>
+                            Dream
+                        </label>
+
+                        <label class="form__radio-option" for="radio-remember">
+                            <input type="radio" id="radio-remember" name="radio-trip" value="remember">
+                            Remember
+                        </label>
+                    </section>
+                </section>
+
+                <section class="form__image">
+                    <label class="form__section-label" for="image">Upload Image:</label>
+                    <input type="file" id="image" name="image" accept="image/jpeg, .jpeg, .jpg" required />
+                    <p class="error" id="imageError"></p>
+                </section>
+
+                <section class="form__title">
+                    <label class="form__section-label" for="title">Title:</label>
+                    <input type="text" id="title" name="title" placeholder="Enter title" required />
+                </section>
+
+                <section class="form__text">
+                    <label class="form__section-label" for="text">Text:</label>
+                    <textarea id="text" name="text" placeholder="Write description here" required></textarea>
+                </section>
+
+                <section class="form__buttons">
+                    <button class="btn" type="submit">Submit</button>
+                </section>
+
+                <section class="form__result">
+                    <p class="result" id="result"></p>
+                </section>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer__by">Website by: V.N.E</p>
+    </footer>
+
+    <script src="js/add-trip.js"></script>
+    <script src="js/navbar.js"></script>
+
+</body>
+
+</html>

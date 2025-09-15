@@ -1,0 +1,69 @@
+.add-trip {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__section-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form__radio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.form__image {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__title input {
+    padding: 0.2rem;
+}
+
+.form__text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__text textarea {
+    padding: 0.2rem;
+}
+
+.error {
+    color: red;
+}
+
+.form__result {
+    color: green;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,23 @@
+.main__about {
+    background: var(--color-red-dark-translucent);
+    color: var(--color-terracotta-light);
+    width: 90%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main__about-header {
+    font-size: 4rem;
+}
+
+.main__about-header-quote {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.main__about-text {
+    margin-top: 25px;
+    font-size: 1rem;
+}

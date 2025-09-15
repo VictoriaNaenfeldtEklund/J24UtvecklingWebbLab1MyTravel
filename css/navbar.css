@@ -1,0 +1,101 @@
+/* Mobile */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--color-terracotta);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+/* Hamburger Menu Icon */
+.navbar__hamburger {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.navbar__hamburger span {
+    width: 30px;
+    height: 4px;
+    background-color: var(--color-logo-light);
+}
+
+/* Links and button on the right side of the navbar are hidden by default on mobile */
+.navbar__right {
+    display: none;
+}
+
+/* settings for when the hamburger meny are pressed and the links and button are shown */
+.navbar__right.show {
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    background-color: var(--color-terracotta);
+    position: absolute;
+    top: 60px;
+    padding: 0.5rem;
+    z-index: 999;
+
+    gap: 1.5rem;
+}
+
+.navbar__links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 20px;
+    gap: 1.5rem;
+}
+
+.navbar__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--color-red-dark);
+}
+
+.navbar__link:hover {
+    color: var(--color-terracotta-light);
+}
+
+.navbar__buttons {
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+
+    /* Hide hamburger on desktop */
+    .navbar__hamburger {
+        display: none;
+    }
+
+    .navbar__right {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .navbar__links {
+        flex-direction: row;
+    }
+
+    .navbar__buttons {
+        margin-bottom: 0;
+    }
+}

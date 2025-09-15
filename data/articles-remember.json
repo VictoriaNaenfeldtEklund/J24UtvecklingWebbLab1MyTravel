@@ -1,0 +1,24 @@
+{
+    "articles": [
+        {
+            "image": "images/DefaultImage_300x200px.jpg",
+            "title": "Default Travel 1",
+            "text": "Default data from articles-remember.json"
+        },
+        {
+            "image": "images/DefaultImage_300x200px.jpg",
+            "title": "Default Travel 2",
+            "text": "Default data from articles-remember.json"
+        },
+        {
+            "image": "images/DefaultImage_300x200px.jpg",
+            "title": "Default Travel 3",
+            "text": "Default data from articles-remember.json"
+        },
+        {
+            "image": "images/DefaultImage_300x200px.jpg",
+            "title": "Default Travel 4",
+            "text": "Default data from articles-remember.json"
+        }
+    ]
+}
